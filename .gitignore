@@ -1,0 +1,9 @@
+.firebase/
+dist/
+node_modules/
+venv/
+__pycache__/
+
+.firebaserc
+firebase-debug.log
+package-lock.json

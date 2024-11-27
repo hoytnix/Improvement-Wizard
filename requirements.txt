@@ -1,0 +1,12 @@
+click
+csscompressor
+htmlmin
+Jinja2
+Markdown
+MarkupSafe
+pathtools
+ply
+PyYAML
+#slimit
+watchdog
+webptools

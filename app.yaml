@@ -1,0 +1,66 @@
+app:
+  dist_dir: '/www/fatfirecake.com'
+  proj_title: CMS Demo
+  canonical_url: https://content-management-syste-a9bb6.web.app
+  jsonld_id: 'M#vF_X&-FcRT.rL.y=.cUAdj[=q?#GH2'
+  gtm: W8J9GD7
+  theme: litera
+  navbar_pages:
+    Home: /
+    News: /news
+  social_media:
+    amazon: https://www.amazon.com/author/revmichaelhoyt
+    facebook: https://www.facebook.com/SaintsBeTold/
+    instagram: https://www.instagram.com/economyofdreams
+    twitter: https://twitter.com/SaintsBeTold
+    linkedin: https://www.linkedin.com/in/economyofdreams
+    youtube: https://youtube.com/channel/UCNx9OlImFLIp9zYI9xteX9g
+  contact:
+    name: Mike
+    phone: '+12698610617'
+    email: 'mike@saintsbetold.org'
+    mail:
+        street: '1950 W Corporate Way #70122'
+        city: Anaheim
+        state: CA 
+        postal: '92801'
+
+blueprints:
+  pages:
+    - index:
+        img: foobar.png
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - sign-up:
+        title: Sign Up
+        img: foobar.png
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - register:
+        title: Register
+        img: foobar.png
+        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - terms-of-use:
+        title: Terms of Use
+        description: Terms of Use
+    - privacy-policy:
+        title: Privacy Policy
+        description: Privacy Policy
+  affiliates:
+    - google:
+        affiliate_url: 'https://google.com'
+
+models:
+  news:
+    templates:
+      news: news
+      articles: {title: article/*}
+      tags: {tags: 'tag/[*]'}
+    items:
+      hello-world:
+        title: Hello World
+        tags: [foo, bar, lorem, ipsum]
+      foo:
+        title: Foo
+        tags: [foo, lorem]
+      bar:
+        title: Bar
+        tags: [bar, ipsum]
