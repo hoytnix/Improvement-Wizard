@@ -4,7 +4,7 @@ htmlmin
 Jinja2
 Markdown
 MarkupSafe
-pathtools
+#pathtools
 ply
 PyYAML
 #slimit

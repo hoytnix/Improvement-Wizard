@@ -1,0 +1,591 @@
+/***************************************
+ _______  _______  _______  _______  ___   __    _  _______ 
+|       ||       ||       ||       ||   | |  |  | ||       |
+|    _  ||   _   ||    _  ||    _  ||   | |   |_| ||  _____|
+|   |_| ||  | |  ||   |_| ||   |_| ||   | |       || |_____ 
+|    ___||  |_|  ||    ___||    ___||   | |  _    ||_____  |
+|   |    |       ||   |    |   |    |   | | | |   | _____| |
+|___|    |_______||___|    |___|    |___| |_|  |__||_______|
+
+****************************************/
+
+
+.poppins-thin {
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+
+.poppins-extralight {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.poppins-light {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.poppins-regular {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.poppins-medium {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.poppins-semibold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.poppins-bold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.poppins-extrabold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+}
+
+.poppins-black {
+	font-family: "Poppins", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+}
+
+.poppins-thin-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.poppins-extralight-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: italic;
+}
+
+.poppins-light-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.poppins-regular-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.poppins-medium-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: italic;
+}
+
+.poppins-semibold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.poppins-bold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.poppins-extrabold-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 800;
+	font-style: italic;
+}
+
+.poppins-black-italic {
+	font-family: "Poppins", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+}
+
+
+
+/***************************************
+ __   __  _______  __   __  _______  ___      _______  _     _ 
+|  | |  ||       ||  | |  ||       ||   |    |       || | _ | |
+|  |_|  ||    ___||  |_|  ||    ___||   |    |   _   || || || |
+|       ||   |___ |       ||   |___ |   |    |  | |  ||       |
+|       ||    ___||_     _||    ___||   |___ |  |_|  ||       |
+|   _   ||   |___   |   |  |   |    |       ||       ||   _   |
+|__| |__||_______|  |___|  |___|    |_______||_______||__| |__|
+****************************************/
+
+
+#heyflow {
+	padding: 20px;
+}
+
+
+
+/***************************************
+__   __  _______  __   __  _______  __   __  _______  _______ 
+|  | |  ||       ||  | |  ||       ||  | |  ||  _    ||       |
+|  |_|  ||   _   ||  | |  ||_     _||  | |  || |_|   ||    ___|
+|       ||  | |  ||  |_|  |  |   |  |  |_|  ||       ||   |___ 
+|_     _||  |_|  ||       |  |   |  |       ||  _   | |    ___|
+  |   |  |       ||       |  |   |  |       || |_|   ||   |___ 
+  |___|  |_______||_______|  |___|  |_______||_______||_______|
+****************************************/
+
+
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	margin: auto;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#video-subtext {
+	font-size: 4vw;
+	color: #00407A;
+	margin-bottom: 40px;
+}
+
+
+
+/***************************************
+ _______  __   __  _______  _     _  _______  ______   
+|       ||  | |  ||       || | _ | ||       ||    _ |  
+|  _____||  |_|  ||   _   || || || ||    ___||   | ||  
+| |_____ |       ||  | |  ||       ||   |___ |   |_||_ 
+|_____  ||       ||  |_|  ||       ||    ___||    __  |
+ _____| ||   _   ||       ||   _   ||   |___ |   |  | |
+|_______||__| |__||_______||__| |__||_______||___|  |_|
+ _     _  ___   _______  _______  ______    ______     
+| | _ | ||   | |       ||   _   ||    _ |  |      |    
+| || || ||   | |____   ||  |_|  ||   | ||  |  _    |   
+|       ||   |  ____|  ||       ||   |_||_ | | |   |   
+|       ||   | | ______||       ||    __  || |_|   |   
+|   _   ||   | | |_____ |   _   ||   |  | ||       |   
+|__| |__||___| |_______||__| |__||___|  |_||______| 
+****************************************/
+
+
+body {
+	font-family: "Poppins";
+}
+
+#announcement {
+	color: #D4AF37;
+	font-size: 3vw;
+}
+
+#announcement-memo-header {
+	font-size: 3.5vw;
+	font-weight: bold;
+}
+
+#banner-text {
+	background-color: #016CAF;
+	color: white;
+	font-size: 5vw;
+	font-weight: bold;
+}
+
+#banner-subtext {
+	font-size: 4vw;
+}
+
+#ixl8s {
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: rgb(101, 191, 118);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 2px;
+	font-weight: bold;
+}
+
+#founder {
+	margin-top: 20px;
+}
+
+#founder-top {
+	width: 100%;
+	padding-top: 10px;
+}
+
+#founder-text {
+	padding-top: 0px;
+	text-align: right;
+	color: #00407A;
+	font-size: 5vw;
+}
+
+.customer-sign {
+	padding: 10px;
+	border-bottom-left-radius: 25px !important;
+	border-bottom-right-radius: 25px !important;
+	border-top-left-radius: 25px !important;
+	border-top-right-radius: 25px !important;
+}
+
+#satisfaction-guaranteed {
+	margin: 40px 5px;
+	border-style: dashed;
+	border-color: black;
+	border-width: 2px;
+}
+
+#satisfaction-guaranteed h3 {
+	padding: 40px 0;
+	font-size: 4vw;
+}
+
+#service-map {
+	background-color: #00407A;
+	padding: 20px 0;
+}
+
+#service-map h3 {
+	color: white;
+	font-size: 5vw;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+#service-map img {
+	width: auto;
+	max-height: 70vh;
+	margin: auto;
+}
+
+#installers {
+	padding-top: 40px;
+	text-align: center;
+}
+
+#installers h3 {
+	font-size: 5vw;
+	color: #00407A;
+	font-weight: bold;
+}
+
+#installers h5 {
+	font-size: 3vw;
+	padding-top: 10px;
+}
+
+#installers button {
+	font-size: 2.5vw;
+	background-color: #016CAF;
+	color: white;
+}
+
+#installers img {
+	padding-top: 40px;
+}
+
+#what-to-expect {
+	padding: 40px;
+	background-color: #016CAF;
+}
+
+#what-to-expect h3 {
+	font-weight: bold;
+	font-size: 5vw;
+	color: white;
+	padding-bottom: 40px;
+}
+
+#what-to-expect button {
+	width: auto;
+	font-size: 3vw;
+	background-color: #D4AF37;
+	color: white;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 10px 20px;
+	border-bottom-left-radius: 15px !important;
+	border-bottom-right-radius: 15px !important;
+	border-top-left-radius: 15px !important;
+	border-top-right-radius: 15px !important;
+}
+
+#what-to-expect img {
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+	max-width: 250px;
+}
+
+#what-to-expect p {
+	padding-top: 20px;
+	color: white;
+	font-size: 2vw;
+	font-weight: bold;
+}
+
+#limited-time-offer {
+	padding: 40px;
+	background-color: #D4AF37;
+	color: white;
+	font-weight: bold;
+}
+
+#limited-time-offer h3 {
+	font-size: 5vw;
+}
+
+#limited-time-offer h4 {
+	font-size: 4vw;
+}
+
+#limited-time-offer h5 {
+	font-size: 2vw;
+}
+
+#benefits h3 {
+	font-size: 5vw;
+	padding-bottom: 20px;
+}
+
+#benefits ul {
+	text-align: left;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#benefits li {
+	font-size: 3vw;
+	padding-left: 1em;
+}
+
+#benefits li:before {
+	content: "✅";
+	padding-right: 5px;
+}
+
+#what-sets-us-apart {
+	margin-top: 40px;
+	padding: 40px;
+	background-color: #D4AF37;
+	color: white;
+	font-weight: bold;
+}
+
+#what-sets-us-apart h3 {
+	font-size: 5vw;
+	padding-bottom: 20px;
+}
+
+#what-sets-us-apart h4 {
+	font-size: 4vw;
+}
+
+#what-sets-us-apart h5 {
+	font-size: 2vw;
+}
+
+#colors h3 {
+	margin-top: 40px;
+	font-size: 5vw;
+}
+
+#colors .col-6 {
+	padding: 20px;
+}
+
+#colors p {
+	font-size: 3vw;
+}
+
+.colors-style {
+	font-size: 80%;
+}
+
+#reviews {
+	margin-top: 20px;
+	padding-bottom: 80px;
+	background-color: #00407A;
+	color: white;
+}
+
+#reviews h3 {
+	margin-top: 40px;
+	font-size: 5vw;
+	font-weight: bold;
+}
+
+#more-benefits {
+	padding: 40px;
+	background-color: grey;
+	color: white;
+}
+
+#more-benefits h3 {
+	font-size: 5vw;
+	font-weight: bold;
+}
+
+#more-benefits h4 {
+	font-size: 3vw;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+#more-benefits p {
+	font-size: 2vw;
+}
+
+#more-benefits img {
+	width: 50%;
+	height: auto;
+	margin-top: 40px;
+}
+
+#before-after {
+	margin-top: 40px;
+}
+
+#before-after h3 {
+	font-size: 4vw;
+	width: 80%;
+	margin: auto;
+	background-color: #016CAF;
+	color: white;
+	margin-bottom: 20px;
+}
+
+#before-after p {
+	font-size: 5vw;
+	color: #016CAF;
+	font-weight: bold;
+}
+
+#before-after img {
+	width: 70%;
+	height: auto;
+}
+
+#testimonial h3 {
+	font-size: 5vw;
+}
+
+#options {
+	margin-top: 40px;
+	padding: 40px;
+	background-color: #00407A;
+	color: white;
+	text-align: left;
+}
+
+#options h3 {
+	text-align: center;
+	font-size: 5vw;
+	margin-bottom: 40px;
+}
+
+#options h4 {
+	font-size: 4vw;
+}
+
+#options p {
+	font-size: 2vw;
+}
+
+#options .col-sm-4 {
+	margin-top: 40px;
+}
+
+#options .col-sm-8 {
+	margin-top: 40px;
+}
+
+#options .col-sm-3 {
+	margin-top: 40px;
+}
+
+#options .col-sm-9 {
+	margin-top: 40px;
+}
+
+#about-us h3 {
+	padding-top: 40px;
+	font-size: 5vw;
+}
+
+#about-us h4 {
+	color: #016CAF;
+	font-size: 3vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+#about-us h5 {
+	font-size: 3vw;
+}
+
+#disclaimer p {
+	padding: 40px;
+}
+
+#disclaimer-header h1 {
+	font-size: 4vw;
+}
+
+#disclaimer-header h2 {
+	font-size: 3vw;
+}
+
+#footer {
+	padding-top: 20px;
+	background-color: #00407A;
+	color: white;
+}
+
+#footer img {
+	max-width: 250px;
+	height: auto;
+	margin: auto;
+}
+
+#footer h4 {
+	margin-top: 20px;
+	text-align: left;
+}
+
+#footer h5 {
+	text-align: left;
+}
+
+#footer li {
+	display: inline;
+	padding-left: 20px;
+}
+
+#footer img {
+	width: 100%;
+}

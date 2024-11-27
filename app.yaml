@@ -1,9 +1,9 @@
 app:
-  dist_dir: '/www/fatfirecake.com'
-  proj_title: CMS Demo
-  canonical_url: https://content-management-syste-a9bb6.web.app
-  jsonld_id: 'M#vF_X&-FcRT.rL.y=.cUAdj[=q?#GH2'
-  gtm: W8J9GD7
+  dist_dir: '/www/improvementwizard.com'
+  proj_title: Improvement Wizard
+  canonical_url: https://improvementwizard.com
+  jsonld_id: 'OW0MiokD6ZUyzs4ij4i6hvSzAGY2yXM7'
+  gtm: G-5M2ZFKYSGQ
   theme: litera
   navbar_pages:
     Home: /
@@ -26,41 +26,6 @@ app:
         postal: '92801'
 
 blueprints:
-  pages:
-    - index:
-        img: foobar.png
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - sign-up:
-        title: Sign Up
-        img: foobar.png
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - register:
-        title: Register
-        img: foobar.png
-        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - terms-of-use:
-        title: Terms of Use
-        description: Terms of Use
-    - privacy-policy:
-        title: Privacy Policy
-        description: Privacy Policy
-  affiliates:
-    - google:
-        affiliate_url: 'https://google.com'
-
-models:
-  news:
-    templates:
-      news: news
-      articles: {title: article/*}
-      tags: {tags: 'tag/[*]'}
-    items:
-      hello-world:
-        title: Hello World
-        tags: [foo, bar, lorem, ipsum]
-      foo:
-        title: Foo
-        tags: [foo, lorem]
-      bar:
-        title: Bar
-        tags: [bar, ipsum]
+  index:
+    img: foobar.png
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.

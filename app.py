@@ -6,10 +6,7 @@ import hashlib
 
 import click
 import markdown
-from csscompressor import compress as csscompress
-from htmlmin import minify as htmlminify
 from jinja2 import Environment, PackageLoader, BaseLoader
-#from slimit import minify as jsminify
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from webptools import webplib as webp
@@ -58,25 +55,18 @@ class Handler(FileSystemEventHandler):
         builder()
 
 
-def build_template(template_key, config, page_name):
+def build_template(template_key, config):
     env = Environment(loader=PackageLoader(__name__, 'assets/templates'))
     template = env.get_template('{}.html'.format(template_key))
 
-    config['page_name'] = page_name
     try:
-        config['body'] = Environment(loader=BaseLoader).from_string(markdown.markdown(open('assets/pages/{}.md'.format(page_name)).read())).render(**config)
+        config['body'] = ""
     except:
         pass
 
     html = template.render(**config)
 
-    path = 'dist' if page_name == 'index' else 'dist/{}'.format(page_name)
-    
-    if page_name.split('/').__len__() == 2:
-        try:
-            os.mkdir('/'.join(path.split('/')[:-1]))
-        except FileExistsError:
-            pass
+    path = 'dist' if 'index' in template_key else 'dist/{}'.format(template_key.split('.')[0])
 
     try:
         os.mkdir(path)
@@ -92,104 +82,31 @@ def builder():
         o = load(stream, Loader=Loader)
         app_config = o['app']
         blueprints = o['blueprints']
-        models = o['models']
 
-    # Sitemap Data
     sitemap = []
+    env = Environment(loader=PackageLoader(__name__, 'assets/templates'))
 
     # Build static pages
     for template_key in blueprints:
         template_options = blueprints[template_key]
-
-        # one-to-one
-        if type(template_options) is dict:
-            build_template(template_key, {**app_config, **template_options}, template_key)
-        # one-to-many
-        else:
-            for page in template_options:
-                page_name = [x for x in page.keys()][0]
-                page_options = page[page_name] or {}
-                build_template(template_key, {**app_config, **page_options}, page_name)
-                sitemap.append(page_name)
-
-    # Build modeled pages
-    for model_key in models:
-        model = models[model_key]
-        templates = model['templates']
-        items = model['items']
-        for template in templates:
-            t = templates[template]
-            if type(t) is str: # list views
-                build_template(template, {**app_config, **{'items': items}}, t)
-                sitemap.append(t)
-            else: # detail views
-                t_search = [k for k in t][0]
-                t_glob = t[t_search]
-
-                kvs = {}
-                for page_name in items:
-                    item = items[page_name]
-
-                    if t_glob.endswith('*'):
-                        page_options = {**app_config, **item}
-                        build_template(template, page_options, t_glob.replace('*', page_name))
-                        sitemap.append(t_glob.replace('*', page_name))
-                    else:
-                        for v in item[t_search]:
-                            if not v in kvs:
-                                kvs[v] = []
-                            kvs[v].append({**item, **{'key': page_name}})
-
-                if t_glob.endswith('[*]'):
-                    for k in kvs:
-                        page_options = {**app_config, **{'kvs': kvs[k], 'title': k}}
-                        build_template(template, page_options, t_glob.replace('[*]', k))
-                        sitemap.append(t_glob.replace('[*]', k))
+        build_template(template_key, {**app_config})
+        sitemap.append(template_key)
 
     # Compile special items
     with open('dist/sitemap.xml', 'w+') as stream:
-        env = Environment(loader=PackageLoader(__name__, 'assets/templates'))
         template = env.get_template('sitemap.xml')
         html = template.render({**app_config, **{'urls': sitemap, 'date': '2020-04-13'}})
         stream.write(html)
 
     with open('dist/robots.txt', 'w+') as stream:
-        env = Environment(loader=PackageLoader(__name__, 'assets/templates'))
         template = env.get_template('robots.txt')
         html = template.render(**app_config)
         stream.write(html)
 
     with open('dist/404.html', 'w+') as stream:
-        env = Environment(loader=PackageLoader(__name__, 'assets/templates'))
         template = env.get_template('404.html')
         html = template.render(**app_config)
         stream.write(html)
-
-    # Minify Images
-    img_task = False
-    for (root, dirs, files) in os.walk('assets/static/img'):
-        if files.__len__() > 0:
-            img_task = True
-        break
-
-    if img_task:
-        os.system("imagemin --plugin=pngquant assets/static/img/*.png --out-dir=assets/static/img/min")
-        os.system("imagemin --plugin=mozjpeg assets/static/img/*.jpeg --out-dir=assets/static/img/min")
-        os.system("imagemin --plugin=mozjpeg assets/static/img/*.jpg --out-dir=assets/static/img/min")
-        os.system("imagemin --plugin=gifsicle assets/static/img/*.gif --out-dir=assets/static/img/min")
-        #os.system("imagemin --plugin=svgo assets/static/img/*.svg --out-dir=assets/static/img/min")
-
-        for (root, dirs, files) in os.walk('assets/static/img'):
-            for file in files:
-                old_fp = root + '/' + file
-                raw_fp = root + '/raw/' + file
-                webp_fp = root + '/webp/' + '.'.join(file.split('.')[:-1]) + '.webp'
-
-                shutil.move(old_fp, raw_fp)
-                
-                if not os.path.exists(webp_fp):
-                    webp.cwebp(raw_fp, webp_fp, "-q 80")
-            break
 
     # Collect static assets
     dist_dir = app_config['dist_dir']
@@ -197,53 +114,9 @@ def builder():
     try:
         shutil.rmtree(dist_dir + '/static')
     except:
-        pass6
+        pass
     shutil.copytree(src='assets/static', dst=dist_dir + '/static')
 
-    # CSS Minification
-    static_cache = {}
-    for (root, dirs, files) in os.walk(dist_dir + '/static/css'):
-        for file in files:
-            with open(root + '/' + file, 'r') as stream:
-                css = csscompress(stream.read())
-                m = hashlib.md5()
-                m.update(str.encode(css))
-                hashsum = m.hexdigest()
-                new_file = "{}.{}.css".format(".".join(file.split('.')[:-1]), hashsum)
-                with open(dist_dir + '/static/css/' + new_file, 'w+') as stream:
-                    stream.write(css)
-                static_cache[file] = new_file
-            os.remove(root + '/' + file)
-        break
-
-    """
-    # JS Minification
-    for (root, dirs, files) in os.walk('dist/static/js'):
-        for file in files:
-            with open(root + '/' + file, 'r') as stream:
-                js = jsminify(stream.read(), mangle=False)
-                m = hashlib.md5()
-                m.update(str.encode(js))
-                hashsum = m.hexdigest()
-                new_file = "{}.{}.js".format(".".join(file.split('.')[:-1]), hashsum)
-                with open('dist/static/js/' + new_file, 'w+') as stream:
-                    stream.write(js)
-                static_cache[file] = new_file
-            os.remove(root + '/' + file)
-        break
-    """
-
-    # Cache Busting
-    for (root, dirs, files) in os.walk(dist_dir):
-        for file in files:
-            if file.endswith('html'):
-                fp = root + '/' + file
-                html = open(fp, 'r').read()
-                for key in static_cache:
-                    html = html.replace(key, static_cache[key])
-                html = htmlminify(html, remove_comments=True)
-                with open(fp, 'w+') as stream:
-                    stream.write(html)
 
 
 @click.group()
