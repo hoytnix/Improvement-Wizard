@@ -132,7 +132,7 @@
 
 
 #heyflow {
-	padding: 20px;
+	margin: 20px 0;
 }
 
 
@@ -257,18 +257,17 @@ body {
 }
 
 #satisfaction-guaranteed h3 {
-	padding: 40px 0;
-	font-size: 4vw;
+	font-size: 7vw;
 }
 
 #service-map {
 	background-color: #00407A;
-	padding: 20px 0;
+	padding: 40px 0;
 }
 
 #service-map h3 {
 	color: white;
-	font-size: 5vw;
+	font-size: 7vw;
 	font-weight: bold;
 	padding: 20px 0;
 }
@@ -306,15 +305,15 @@ body {
 }
 
 #what-to-expect {
-	padding: 40px;
+	padding: 0px 4px 40px 4px;
 	background-color: #016CAF;
 }
 
 #what-to-expect h3 {
 	font-weight: bold;
-	font-size: 5vw;
+	font-size: 7vw;
 	color: white;
-	padding-bottom: 40px;
+	padding: 40px 0;
 }
 
 #what-to-expect button {
@@ -341,7 +340,7 @@ body {
 #what-to-expect p {
 	padding-top: 20px;
 	color: white;
-	font-size: 2vw;
+	font-size: 4vw;
 	font-weight: bold;
 }
 
@@ -353,19 +352,19 @@ body {
 }
 
 #limited-time-offer h3 {
-	font-size: 5vw;
+	font-size: 7vw;
 }
 
 #limited-time-offer h4 {
-	font-size: 4vw;
+	font-size: 5vw;
 }
 
 #limited-time-offer h5 {
-	font-size: 2vw;
+	font-size: 4vw;
 }
 
 #benefits h3 {
-	font-size: 5vw;
+	font-size: 7vw;
 	padding-bottom: 20px;
 }
 
@@ -377,7 +376,7 @@ body {
 }
 
 #benefits li {
-	font-size: 3vw;
+	font-size: 3.5vw;
 	padding-left: 1em;
 }
 
@@ -395,21 +394,21 @@ body {
 }
 
 #what-sets-us-apart h3 {
-	font-size: 5vw;
+	font-size: 7vw;
 	padding-bottom: 20px;
 }
 
 #what-sets-us-apart h4 {
-	font-size: 4vw;
+	font-size: 5vw;
 }
 
 #what-sets-us-apart h5 {
-	font-size: 2vw;
+	font-size: 3vw;
 }
 
 #colors h3 {
 	margin-top: 40px;
-	font-size: 5vw;
+	font-size: 7vw;
 }
 
 #colors .col-6 {
@@ -417,7 +416,7 @@ body {
 }
 
 #colors p {
-	font-size: 3vw;
+	font-size: 3.5vw;
 }
 
 .colors-style {
@@ -433,7 +432,7 @@ body {
 
 #reviews h3 {
 	margin-top: 40px;
-	font-size: 5vw;
+	font-size: 7vw;
 	font-weight: bold;
 }
 
@@ -444,18 +443,18 @@ body {
 }
 
 #more-benefits h3 {
-	font-size: 5vw;
+	font-size: 7vw;
 	font-weight: bold;
 }
 
 #more-benefits h4 {
-	font-size: 3vw;
+	font-size: 5vw;
 	font-weight: bold;
 	padding: 20px 0;
 }
 
 #more-benefits p {
-	font-size: 2vw;
+	font-size: 4vw;
 }
 
 #more-benefits img {
@@ -469,7 +468,7 @@ body {
 }
 
 #before-after h3 {
-	font-size: 4vw;
+	font-size: 5vw;
 	width: 80%;
 	margin: auto;
 	background-color: #016CAF;
@@ -478,7 +477,7 @@ body {
 }
 
 #before-after p {
-	font-size: 5vw;
+	font-size: 7vw;
 	color: #016CAF;
 	font-weight: bold;
 }
@@ -489,7 +488,7 @@ body {
 }
 
 #testimonial h3 {
-	font-size: 5vw;
+	font-size: 7vw;
 }
 
 #options {
@@ -502,16 +501,16 @@ body {
 
 #options h3 {
 	text-align: center;
-	font-size: 5vw;
+	font-size: 7vw;
 	margin-bottom: 40px;
 }
 
 #options h4 {
-	font-size: 4vw;
+	font-size: 5vw;
 }
 
 #options p {
-	font-size: 2vw;
+	font-size: 3vw;
 }
 
 #options .col-sm-4 {
@@ -532,12 +531,12 @@ body {
 
 #about-us h3 {
 	padding-top: 40px;
-	font-size: 5vw;
+	font-size: 7vw;
 }
 
 #about-us h4 {
 	color: #016CAF;
-	font-size: 3vw;
+	font-size: 4vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -545,7 +544,7 @@ body {
 }
 
 #about-us h5 {
-	font-size: 3vw;
+	font-size: 4vw;
 }
 
 #disclaimer p {

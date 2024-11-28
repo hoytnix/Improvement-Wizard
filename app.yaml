@@ -1,9 +1,9 @@
 app:
-  dist_dir: '/www/improvementwizard.com'
+  dist_dir: "dist"
   proj_title: Improvement Wizard
   canonical_url: https://improvementwizard.com
-  jsonld_id: 'OW0MiokD6ZUyzs4ij4i6hvSzAGY2yXM7'
-  gtm: G-5M2ZFKYSGQ
+  jsonld_id: "OW0MiokD6ZUyzs4ij4i6hvSzAGY2yXM7"
+  gtag: G-5M2ZFKYSGQ
   theme: litera
   navbar_pages:
     Home: /
@@ -17,13 +17,13 @@ app:
     youtube: https://youtube.com/channel/UCNx9OlImFLIp9zYI9xteX9g
   contact:
     name: Mike
-    phone: '+12698610617'
-    email: 'mike@saintsbetold.org'
+    phone: "+12698610617"
+    email: "mike@saintsbetold.org"
     mail:
-        street: '1950 W Corporate Way #70122'
-        city: Anaheim
-        state: CA 
-        postal: '92801'
+      street: "1950 W Corporate Way #70122"
+      city: Anaheim
+      state: CA
+      postal: "92801"
 
 blueprints:
   index:

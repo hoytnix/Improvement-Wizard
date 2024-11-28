@@ -1,87 +1,105 @@
-{% extends "macros/skeleton.html" %}
+{% extends "macros/skeleton.html" %} {% block insert_header %} {% endblock %} {% block body %}
+<div class="container-fluid text-center">
+  <div class="row" id="announcement">
+    <span id="announcement-memo"
+      ><span id="announcement-memo-header">This Month:</span> 50% Off Installation Cost!</span
+    >
+  </div>
 
-{% block insert_header %}
-<!-- <meta name="robots" content="noindex" /> -->
-{% endblock %}
+  <div class="row" id="banner">
+    <span id="banner-text">
+      Introducing...<br />
+      Budget-Friendly Walk-In Showers!
+    </span>
+  </div>
 
-{% block body %}
-        <div class="container-fluid text-center">
-            <div class="row" id="announcement">
-                <span id="announcement-memo"><span id="announcement-memo-header">This Month:</span> 50% Off Installation Cost!</span>
-            </div>
+  <div class="row" id="banner-subtext">
+    <span>
+      Experience the luxury of a new shower or bath<br />installed in as little as
+      <span id="ixl8s" class="underline underline-offset-2 decoration-2 decoration-wavy decoration-brandgreen font-bold"
+        >ONE DAY*</span
+      >
+    </span>
+  </div>
 
-            <div class="row" id="banner">
-                <span id="banner-text">
-                    Introducing...<br/>
-                    Budget-Friendly Walk-In Showers!
-                </span>
-            </div>
+  <div class="row" id="founder">
+    <div class="col-4">
+      <img
+        id="founder-top"
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/gerbetsy.webp"
+      />
+    </div>
+    <div class="col-8" id="founder-text">
+      Your new shower...<br />
+      completed in <span style="font-size: larger; font-weight: bolder">1 day*</span><br />
+      done right the 1st time!<br />
+    </div>
+  </div>
 
-            <div class="row" id="banner-subtext">
-                <span>
-                    Experience the luxury of a new shower or bath<br/>installed in as little as <span id="ixl8s" class="underline underline-offset-2 decoration-2 decoration-wavy decoration-brandgreen font-bold">ONE DAY*</span>
-                </span>
-            </div>
+  <div class="row" id="video-uno">
+    <div class="embed-container">
+      <iframe src="https://www.youtube.com/embed/qkawFgXwQGg" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
 
-            <div class="row" id="founder">
-                <div class="col-4">
-                    <img id="founder-top" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/gerbetsy.webp">
-                </div>
-                <div class="col-8" id="founder-text">
-                        Your new shower...<br/>
-                        completed in <span style="font-size: larger; font-weight: bolder;">1 day*</span><br/>
-                        done right the 1st time!<br/>
-                </div>
-            </div>
+  <div class="row" id="heyflow">
+    <heyflow-wrapper flow-id="shower-wizard" dynamic-height style-config='{"width": "100%"}'></heyflow-wrapper>
+  </div>
 
-            <div class="row" id="video-uno">
-                <div class='embed-container'><iframe src='https://www.youtube.com/embed/qkawFgXwQGg' frameborder='0' allowfullscreen></iframe></div>
-            </div>
+  <div class="row" id="video-dos">
+    <div style="max-width: 1280px; margin: auto">
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden">
+        <iframe
+          src="https://allweatherseal.sharepoint.com/sites/BrandMedia-Assets/_layouts/15/embed.aspx?UniqueId=603fb7c6-bcc4-4158-9cea-c0aabcde340f&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+          width="1280"
+          height="720"
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen
+          title="What To Expect.m4v"
+          style="border: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%"
+        ></iframe>
+      </div>
+    </div>
+    <h3 id="video-subtext">Oh wow! 🤯 ❤️ 🎊</h3>
+  </div>
 
-            <div class="row" id="heyflow">
-                <heyflow-wrapper flow-id="shower-wizard" dynamic-height style-config='{"width": "100%"}'></heyflow-wrapper>    
-            </div>
+  <div class="row" id="happy-customers">
+    <div class="col-sm-4">
+      <img class="img-fluid rounded customer-sign" src="./static/img/sign-1.jpg" />
+    </div>
+    <div class="col-sm-4">
+      <img class="img-fluid rounded customer-sign" src="./static/img/sign-2.jpg" />
+    </div>
+    <div class="col-sm-4">
+      <img class="img-fluid rounded customer-sign" src="./static/img/sign-3.jpg" />
+    </div>
+  </div>
 
-            <div class="row" id="video-dos">
-                <div style="max-width: 1280px; margin: auto"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://allweatherseal.sharepoint.com/sites/BrandMedia-Assets/_layouts/15/embed.aspx?UniqueId=603fb7c6-bcc4-4158-9cea-c0aabcde340f&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="1280" height="720" frameborder="0" scrolling="no" allowfullscreen title="What To Expect.m4v" style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>
-                <h3 id="video-subtext">Oh wow! 🤯 ❤️ 🎊</h3>
-            </div>
+  <div class="row" id="satisfaction-guaranteed">
+    <h3>
+      Every Job We Do Is Done<br />Right The <span style="color: #d4af37; font-weight: bold">First Time</span
+      ><br /><br />
+      <span style="color: #016caf; font-weight: bold">100% SATISFIED</span>
+    </h3>
 
-            <div class="row" id="happy-customers">
-                <div class="col-sm-4">
-                    <img class="img-fluid rounded customer-sign" src="./static/img/sign-1.jpg">
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-fluid rounded customer-sign" src="./static/img/sign-2.jpg">
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-fluid rounded customer-sign" src="./static/img/sign-3.jpg">
-                </div>
-            </div>
+    <div class="col-6" style="text-align: left; padding-left: 40px; font-size: 3vw">
+      <p>satisfaction</p>
+      <p style="color: #00407a; font-weight: bold">/sadəsˈfakSHən/</p>
+    </div>
 
-            <div class="row" id="satisfaction-guaranteed">
-                <h3>
-                    Every Job We Do Is Done<br/>Right The <span style="color: #D4AF37; font-weight: bold">First Time</span><br/><br/>
-                    <span style="color: #016CAF; font-weight: bold">100% SATISFIED</span>
-                </h3>
+    <div class="col-6" style="text-align: left; padding-right: 40px; font-size: 2vw">
+      <p><i>Noun</i></p>
+      <p>fulfillment of one's wishes, expectations, or needs, or the pleasure derived from this.</p>
+    </div>
+  </div>
 
-                <div class="col-6" style="text-align: left; padding-left: 40px; font-size: 3vw;">
-                    <p>satisfaction</p>
-                    <p style="color: #00407A; font-weight: bold;">/sadəsˈfakSHən/</p>
-                </div>
+  <div class="row" id="service-map">
+    <h3>Always Working In Your Neighborhood!</h3>
+    <img class="img-fluid" src="./static/img/map.jpg" />
+  </div>
 
-                <div class="col-6" style="text-align: left; padding-right: 40px; font-size: 2vw;">
-                    <p><i>Noun</i></p>
-                    <p>fulfillment of one's wishes, expectations, or needs, or the pleasure derived from this.</p>
-                </div>
-            </div>
-
-            <div class="row" id="service-map">
-                <h3>Always Working In Your Neighborhood!</h3>
-                <img class="img-fluid" src="./static/img/map.jpg">
-            </div>
-            
-            <!--
+  <!--
             <div class="row" id="installers">
                 <h3>Service You Can Trust</h3>
                 <h4>Currently planning for 884 bath & shower installs in 2024<br/><br/>Get your price now before our schedule is full!</h4>
@@ -105,398 +123,458 @@
             </div>
             -->
 
-            <div class="row" id="what-to-expect">
-                <h3>What To Expect</h3>
-                <div class="col-4">
-                    <div class="row">
-                        <button class="rounded">1</button>
-                    </div>
-                    <img src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/expect/Tell%20Us%20About%20Your%20Project.png">
-                    <p>Tell us about your project</p>
-                </div>
+  <div class="row" id="what-to-expect">
+    <h3>What To Expect</h3>
+    <div class="col-4">
+      <div class="row">
+        <button class="rounded">1</button>
+      </div>
+      <img
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/expect/Tell%20Us%20About%20Your%20Project.png"
+      />
+      <p>Tell us about your project</p>
+    </div>
 
-                <div class="col-4">
-                    <div class="row">
-                        <button class="rounded">2</button>
-                    </div>
-                    <img src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/expect/Get%20Your%20Price.png">
-                    <p>Get your price locked in for one year</p>
-                </div>
+    <div class="col-4">
+      <div class="row">
+        <button class="rounded">2</button>
+      </div>
+      <img
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/expect/Get%20Your%20Price.png"
+      />
+      <p>Get your price locked in for one year</p>
+    </div>
 
-                <div class="col-4">
-                    <div class="row">
-                        <button class="rounded">3</button>
-                    </div>
-                    <img src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/expect/Install%20Your%20Dream%20Shower.png">
-                    <p>Install your dream shower</p>
-                </div>
-            </div>
+    <div class="col-4">
+      <div class="row">
+        <button class="rounded">3</button>
+      </div>
+      <img
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/expect/Install%20Your%20Dream%20Shower.png"
+      />
+      <p>Install your dream shower</p>
+    </div>
+  </div>
 
-            <div class="row" id="limited-time-offer">
-                <h3>Limited Time Offer</h3>
-                <h5>Get your project started with no money down!*</h5>
-                <h4>50% Off Installation Cost</h4>
-            </div>
+  <div class="row" id="limited-time-offer">
+    <h3>Limited Time Offer</h3>
+    <h5>Get your project started with no money down!*</h5>
+    <h4>50% Off Installation Cost</h4>
+  </div>
 
-            <div class="row" id="heyflow">
-                <heyflow-wrapper flow-id="shower-wizard" dynamic-height style-config='{"width": "100%"}'></heyflow-wrapper>    
-            </div>
+  <div class="row" id="heyflow">
+    <heyflow-wrapper flow-id="shower-wizard" dynamic-height style-config='{"width": "100%"}'></heyflow-wrapper>
+  </div>
 
-            <div class="row" id="benefits">
-                <h3>Instant Baths and Showers</h3>
-                <div class="col-sm-6">
-                    <ul>
-                        <li>Double Lifetime Warranty</li>
-                        <li>1 Day Installations On Most Projects</li>
-                        <li>Antimicrobial & Non-Porous Materials</li>
-                        <li>Customized Safety Accessories</li>
-                        <li>Increase Home Value Instantly</li>
-                        <li>Dedicated Service Department</li>
-                    </ul>
-                </div>
-                <div class="col-sm-6">
-                    <img class="img-fluid rounded" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/instant-after.jpg">
-                </div>
-            </div>
+  <div class="row" id="benefits">
+    <h3>Instant Baths and Showers</h3>
+    <div class="col-sm-6">
+      <ul>
+        <li>Double Lifetime Warranty</li>
+        <li>1 Day Installations On Most Projects</li>
+        <li>Antimicrobial & Non-Porous Materials</li>
+        <li>Customized Safety Accessories</li>
+        <li>Increase Home Value Instantly</li>
+        <li>Dedicated Service Department</li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <img
+        class="img-fluid rounded"
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/instant-after.jpg"
+      />
+    </div>
+  </div>
 
-            <div class="row" id="what-sets-us-apart">
-                <h3>What Sets Us Apart</h3>
-                <div class="col-4">
-                    <h4>2,054+</h4>
-                    <h5>Satisfied Customers and Counting</h5>
-                </div>
-                <div class="col-4">
-                    <h4>43+</h4>
-                    <h5>Years In Business</h5>
-                </div>
-                <div class="col-4">
-                    <h4>1,500+</h4>
-                    <h5>5 Star Reviews and Counting!</h5>
-                </div>
-            </div>
+  <div class="row" id="what-sets-us-apart">
+    <h3>What Sets Us Apart</h3>
+    <div class="col-4">
+      <h4>2,054+</h4>
+      <h5>Satisfied Customers and Counting</h5>
+    </div>
+    <div class="col-4">
+      <h4>43+</h4>
+      <h5>Years In Business</h5>
+    </div>
+    <div class="col-4">
+      <h4>1,500+</h4>
+      <h5>5 Star Reviews and Counting!</h5>
+    </div>
+  </div>
 
-            <div class="row" id="colors">
-                <h3>What Your Neighbors<br/>Have Completed</h3>
+  <div class="row" id="colors">
+    <h3>What Your Neighbors<br />Have Completed</h3>
 
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/monterey-butterscotch-tile.JPEG">
-                            <p>Butterscotch<br/><span class="colors-style">(Tile)</span></p>
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/monterey-carrara-tile.JPEG">
-                            <p>Carrara<br/><span class="colors-style">(Tile)</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/monterey-carrara-velvet.jpg">
-                            <p>Carrara<br/><span class="colors-style">(Velvet)</span></p>
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/tub-after.png">
-                            <p>Cookies & Cream<br/><span class="colors-style">(Velvet)</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/shower-1.jpg">
-                            <p>Butterscotch<br/><span class="colors-style">(Tile)</span></p>
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/shower-2.jpg">
-                            <p>Carrara<br/><span class="colors-style">(Tile)</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/shower-3.jpg">
-                            <p>Carrara<br/><span class="colors-style">(Velvet)</span></p>
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/shower-4.jpg">
-                            <p>Cookies & Cream<br/><span class="colors-style">(Velvet)</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/shower-5.jpg">
-                            <p>Butterscotch<br/><span class="colors-style">(Tile)</span></p>
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/shower-6.jpg">
-                            <p>Carrara<br/><span class="colors-style">(Tile)</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/shower-7.jpg">
-                            <p>Carrara<br/><span class="colors-style">(Velvet)</span></p>
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/shower-8.jpg">
-                            <p>Cookies & Cream<br/><span class="colors-style">(Velvet)</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/shower-9.jpg">
-                            <p>Carrara<br/><span class="colors-style">(Velvet)</span></p>
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid rounded" src="./static/img/shower-10.jpg">
-                            <p>Cookies & Cream<br/><span class="colors-style">(Velvet)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" id="reviews">
-                <h3>What Your Neighbors Are Saying</h3>
-                
-                <script src="https://static.elfsight.com/platform/platform.js" async></script>
-                <div class="elfsight-app-e30c85c9-35a1-4495-8d87-155ae563a5b8" data-elfsight-app-lazy></div>
-            </div>
-
-            <div class="row" id="more-benefits">
-                <h3>Walk-In Shower Benefits</h3>
-
-                <div class="col-6">
-                    <img src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Increased%20Safety.png">
-                    <h4>Increased Safety</h4>
-                    <p>Unlike bathtubs with a high threshold, walk-in showers are more accessible and are perfect for those with mobility challenges</p>
-                </div>
-                <div class="col-6">
-                    <img src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Easy%20To%20Clean.png">
-                    <h4>Easy To Clean</h4>
-                    <p>Walk-in showers mostly have flat surfaces where there are fewer curves and areas that collect dirt and grime</p>
-                </div>
-
-                <div class="col-6">
-                    <img src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Water%20Efficiency.png">
-                    <h4>Water Efficiency</h4>
-                    <p>A shower traditionally uses less water than bathtubs, posing an opportunity to use less water and energy from your water heater</p>
-                </div>
-                <div class="col-6">
-                    <img src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Slip%20Resistant.png">
-                    <h4>Slip Resistant</h4>
-                    <p>Slips in the shower can pose an extreme risk, our shower pans feature slip resistant material to prevent accidents in the shower</p>
-                </div>
-
-                <div class="col-6">
-                    <img src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Increased%20Space.png">
-                    <h4>Increased Space</h4>
-                    <p>A walk-in shower allows for a larger footprint in your bathroom while old tub enclosures waste space by limiting the square footage of your space</p>
-                </div>
-                <div class="col-6">
-                    <img src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Can%20Fit%20Any%20Bathroom.png">
-                    <h4>Can Fit Any Bathroom</h4>
-                    <p>With a walk-in shower you are not limited to a standard size, you have the flexibility to design your shower exactly how you want it to fit in your space</p>
-                </div>
-            </div>
-
-            <div class="row" id="before-after">
-                <h3 class="rounded">Tub-To-Shower Conversion</h3>
-                <div class="col-6">
-                    <img class="img-fluid rounded" src="./static/img/tub-before.jpg">
-                    <p>BEFORE</p>
-                </div>
-                <div class="col-6">
-                    <img class="img-fluid rounded" src="./static/img/tub-after.png">
-                    <p>AFTER</p>
-                </div>
-
-                <!--
-                <h3 class="rounded">Jacuzzi Tub To Shower Conversion</h3>
-                <div class="col-6">
-                    <img class="img-fluid rounded" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/ba/Before%20-%20Tub%20To%20Walk-In%20Conversion%203.png">
-                    <p>BEFORE</p>
-                </div>
-                <div class="col-6">
-                    <img class="img-fluid rounded" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/ba/After%20-%20Tub%20To%20Walk-In%20Conversion%203.png">
-                    <p>AFTER</p>
-                </div>
-
-                <h3 class="rounded">Neo-Angle Shower Conversion</h3>
-                <div class="col-6">
-                    <img class="img-fluid rounded" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/ba/Before%20-%20Tub%20To%20Walk-In%20Conversion%203.png">
-                    <p>BEFORE</p>
-                </div>
-                <div class="col-6">
-                    <img class="img-fluid rounded" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/ba/After%20-%20Tub%20To%20Walk-In%20Conversion%203.png">
-                    <p>AFTER</p>
-                </div>
-                -->
-                
-                <h3 class="rounded">Shower Replacement</h3>
-                <div class="col-6">
-                    <img class="img-fluid rounded" src="./static/img/shower-before.jpg">
-                    <p>BEFORE</p>
-                </div>
-                <div class="col-6">
-                    <img class="img-fluid rounded" src="./static/img/shower-after.jpg">
-                    <p>AFTER</p>
-                </div>
-
-                <h3 class="rounded">The Options Are Endless...</h3>
-            </div>
-
-            <div class="row" id="heyflow">
-                <heyflow-wrapper flow-id="shower-wizard" dynamic-height style-config='{"width": "100%"}'></heyflow-wrapper>    
-            </div>
-
-            <div class="row" id="testimonial">
-                <h3>AWS CARES ❤️</h3>
-                <div class='embed-container'><iframe src='https://www.youtube.com/embed/0DjFQGSwd7s' frameborder='0' allowfullscreen></iframe></div>
-                <p id="video-subtext">Shower completed in 📍 Northwest, Michigan</p>
-            </div>
-
-            <div class="row" id="options">
-                <h3>Customized Accessories</h3>
-
-                <div class="col-sm-4">
-                    <img class="img-fluid rounded" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/Delta%20Shower%20Head.jpg">
-                </div>
-                <div class="col-sm-8">
-                    <h4>Shower Heads</h4>
-                    <p>You can have the shower head you've always wanted with options like rain shower heads, hand-held, spa-like or multi-functional shower heads</p>
-                </div>
-
-                <div class="col-sm-8">
-                    <h4>Grab Bars</h4>
-                    <p>It’s time to feel safe in the shower again, reduce the risk of falling by including multiple grab bars in your custom design</p>
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-fluid rounded" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/Grab%20Bars.jpeg">
-                </div>
-
-                <div class="col-sm-3">
-                    <img class="img-fluid rounded" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/BCI%20Shower%20Seat.jpeg">
-                </div>
-                <div class="col-sm-9">
-                    <h4>Safety Seats</h4>
-                    <p>Bathe comfortably with a built-in or foldable shower seat that can minimize the chance of a slip or fall</p>
-                </div>
-
-                <div class="col-sm-8">
-                    <h4>Storage Shelves</h4>
-                    <p>Increase the storage space in your shower and conveniently store your toiletries with our corner shelves, built-in niches and shower caddies</p>
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-fluid rounded" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/BCI%20Shower%20Shelf.jpeg">
-                </div>
-
-                <div class="col-sm-4">
-                    <img class="img-fluid rounded" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/BCI%20Shaving%20Stand.jpg">
-                </div>
-                <div class="col-sm-8">
-                    <h4>Shaving Stands</h4>
-                    <p>Built-in to your unit, our shaving stands perfectly blend with your shower to create a safer and more convenient way to shave</p>
-                </div>
-
-                <div class="col-sm-8">
-                    <h4>Soap Dishes</h4>
-                    <p>Add a custom soap dish to store your favorite soap to create a custom yet handy addition to your shower space</p>
-                </div>
-                <div class="col-sm-4">
-                    <img class="img-fluid rounded" src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/BCI%20Soap%20Dish.png">
-                </div>
-            </div>
-
-            <div class="row" id="limited-time-offer">
-                <h3>Limited Time Offer</h3>
-                <h5>Get your project started with no money down!*</h5>
-                <h4>50% Off Installation Cost</h4>
-            </div>
-
-            <div class="row" id="heyflow">
-                <heyflow-wrapper flow-id="shower-wizard" dynamic-height style-config='{"width": "100%"}'></heyflow-wrapper>    
-            </div>
-
-            <div class="row" id="about-us">
-                <h3>Experience The All-Weather<br/>Seal Difference</h3>
-                <h5>173 Human Beings Dedicated To<br/>Providing You A No Worries Shower Remodel</h5>
-
-                <div class="col-4">
-                    <h4>Multi-Generational Family Business</h4>
-                </div>
-                <div class="col-8">
-                    <img class="img-fluid rounded" src="https://cmsplatform.blob.core.windows.net/wwwallweathersealinccom/page-info-images/6a6dc0cb-4eb2-41ad-b82b-72058aa14fda.jpg">
-                    <p>Pictured here is All-Weather Seal Recruiter Jakob Parsons, with the Father Fred Foundation.</p>
-                </div>
-
-                <div class="col-8">
-                    <div class='embed-container'><iframe src='https://www.youtube.com/embed/6RqmO7a44Dk' frameborder='0' allowfullscreen></iframe></div>
-                    <p>Serving North & West Michigan For Over 43+ Years!</p>
-                </div>
-                <div class="col-4">
-                    <h4>Lifetime Warranty Backed By A Dedicated Service Department. You'll Never Have To Call A Manufacturer!</h4>
-                </div>
-            </div>
-
-            <div class="row" id="limited-time-offer">
-                <h3>Currently Planning For <span style="text-decoration: underline;">884 Shower Installs</span> in 2024</h3>
-                <h4 style="font-size: 3vw;">Get your price now before our schedule is full!</h4>
-            </div>
-
-            <div class="row" id="heyflow">
-                <heyflow-wrapper flow-id="shower-wizard" dynamic-height style-config='{"width": "100%"}'></heyflow-wrapper>    
-            </div>
-
-            <div class="row" id="disclaimer">
-                <p>
-                    *Most standard projects completed in one day, complex designs completed in an average of 2 days. Special offers may not be combined with any other discounts. Special Offer valid at first visit only. Some restrictions apply. Some products may not qualify for special offers. Maximum discount may not exceed 10% off retail price. Financing is subject to third party approval. 50% off of installation is equal to 7.5% of the retail price. No money down requires a fully financed project. All communication with Yankee Home may be recorded for quality and training purposes.<br/>
-                    MI # 2102181856
-                </p>
-            </div>
-
-            <div class="row" id="footer">
-                <div class="col-sm-4">
-                    <img src="./static/img/logo.png">
-                </div>
-                <div class="col-sm-4">
-                    <h4>Lowell Headquarters</h4>
-                    <h5>(866) 576-9177</h5>
-                    <h5>319 E Main St.<br/>Lowell, MI 49331</h5>
-
-                    <h4>Traverse City Area</h4>
-                    <h5>(231) 432-5513</h5>
-                    <h5>4306 S M-37<br/>Grawn, MI 49637</h5>
-                </div>
-                <div class="col-sm-4">
-                    <h4>Ludington</h4>
-                    <h5>(231) 936-2471</h5>
-                    <h5>3900 US-10<br/>Ludington, MI 49431</h5>
-
-                    <h4>Petoskey</h4>
-                    <h5>(231) 535-9421</h5>
-                    <h5>2210 E. Mitchell Rd.<br/>Petoskey, MI 49770</h5>
-                </div>
-
-                <hr>
-
-                <ul>
-                    <li><a href="/terms">Terms</a></li>
-                    <li>Privacy</li>
-                    <li>Contact</li>
-                    <li>All-Weather Seal Of West Michigan © 2024. All Rights Reserved.</li>
-                </ul>
-            </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/monterey-butterscotch-tile.JPEG" />
+          <p>Butterscotch<br /><span class="colors-style">(Tile)</span></p>
         </div>
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/monterey-carrara-tile.JPEG" />
+          <p>Carrara<br /><span class="colors-style">(Tile)</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/monterey-carrara-velvet.jpg" />
+          <p>Carrara<br /><span class="colors-style">(Velvet)</span></p>
+        </div>
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/tub-after.png" />
+          <p>Cookies & Cream<br /><span class="colors-style">(Velvet)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/shower-1.jpg" />
+          <p>Butterscotch<br /><span class="colors-style">(Tile)</span></p>
+        </div>
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/shower-2.jpg" />
+          <p>Carrara<br /><span class="colors-style">(Tile)</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/shower-3.jpg" />
+          <p>Carrara<br /><span class="colors-style">(Velvet)</span></p>
+        </div>
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/shower-4.jpg" />
+          <p>Cookies & Cream<br /><span class="colors-style">(Velvet)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/shower-5.jpg" />
+          <p>Butterscotch<br /><span class="colors-style">(Tile)</span></p>
+        </div>
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/shower-6.jpg" />
+          <p>Carrara<br /><span class="colors-style">(Tile)</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/shower-7.jpg" />
+          <p>Carrara<br /><span class="colors-style">(Velvet)</span></p>
+        </div>
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/shower-8.jpg" />
+          <p>Cookies & Cream<br /><span class="colors-style">(Velvet)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/shower-9.jpg" />
+          <p>Carrara<br /><span class="colors-style">(Velvet)</span></p>
+        </div>
+        <div class="col-6">
+          <img class="img-fluid rounded" src="./static/img/shower-10.jpg" />
+          <p>Cookies & Cream<br /><span class="colors-style">(Velvet)</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="reviews">
+    <h3>What Your Neighbors<br />Are Saying</h3>
+
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-e30c85c9-35a1-4495-8d87-155ae563a5b8" data-elfsight-app-lazy></div>
+  </div>
+
+  <div class="row" id="more-benefits">
+    <h3>Walk-In Shower Benefits</h3>
+
+    <div class="col-sm-6">
+      <img
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Increased%20Safety.png"
+      />
+      <h4>Increased Safety</h4>
+      <p>
+        Unlike bathtubs with a high threshold, walk-in showers are more accessible and are perfect for those with
+        mobility challenges
+      </p>
+    </div>
+    <div class="col-sm-6">
+      <img
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Easy%20To%20Clean.png"
+      />
+      <h4>Easy To Clean</h4>
+      <p>
+        Walk-in showers mostly have flat surfaces where there are fewer curves and areas that collect dirt and grime
+      </p>
+    </div>
+
+    <div class="col-sm-6">
+      <img
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Water%20Efficiency.png"
+      />
+      <h4>Water Efficiency</h4>
+      <p>
+        A shower traditionally uses less water than bathtubs, posing an opportunity to use less water and energy from
+        your water heater
+      </p>
+    </div>
+    <div class="col-sm-6">
+      <img
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Slip%20Resistant.png"
+      />
+      <h4>Slip Resistant</h4>
+      <p>
+        Slips in the shower can pose an extreme risk, our shower pans feature slip resistant material to prevent
+        accidents in the shower
+      </p>
+    </div>
+
+    <div class="col-sm-6">
+      <img
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Increased%20Space.png"
+      />
+      <h4>Increased Space</h4>
+      <p>
+        A walk-in shower allows for a larger footprint in your bathroom while old tub enclosures waste space by limiting
+        the square footage of your space
+      </p>
+    </div>
+    <div class="col-sm-6">
+      <img
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/benefits/Can%20Fit%20Any%20Bathroom.png"
+      />
+      <h4>Can Fit Any Bathroom</h4>
+      <p>
+        With a walk-in shower you are not limited to a standard size, you have the flexibility to design your shower
+        exactly how you want it to fit in your space
+      </p>
+    </div>
+  </div>
+
+  <div class="row" id="before-after">
+    <h3 class="rounded">Tub-To-Shower Conversion</h3>
+    <div class="col-6">
+      <img class="img-fluid rounded" src="./static/img/tub-before.jpg" />
+      <p>BEFORE</p>
+    </div>
+    <div class="col-6">
+      <img class="img-fluid rounded" src="./static/img/tub-after.png" />
+      <p>AFTER</p>
+    </div>
+
+    <h3 class="rounded">Shower Replacement</h3>
+    <div class="col-6">
+      <img class="img-fluid rounded" src="./static/img/shower-before.jpg" />
+      <p>BEFORE</p>
+    </div>
+    <div class="col-6">
+      <img class="img-fluid rounded" src="./static/img/shower-after.jpg" />
+      <p>AFTER</p>
+    </div>
+
+    <h3 class="rounded">The Options Are Endless...</h3>
+  </div>
+
+  <div class="row" id="heyflow">
+    <heyflow-wrapper flow-id="shower-wizard" dynamic-height style-config='{"width": "100%"}'></heyflow-wrapper>
+  </div>
+
+  <div class="row" id="testimonial">
+    <h3>AWS CARES ❤️</h3>
+    <div class="embed-container">
+      <iframe src="https://www.youtube.com/embed/0DjFQGSwd7s" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p id="video-subtext">Shower completed in 📍 Northwest, Michigan</p>
+  </div>
+
+  <div class="row" id="options">
+    <h3>Customized Accessories</h3>
+
+    <div class="col-sm-4">
+      <img
+        class="img-fluid rounded"
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/Delta%20Shower%20Head.jpg"
+      />
+    </div>
+    <div class="col-sm-8">
+      <h4>Shower Heads</h4>
+      <p>
+        You can have the shower head you've always wanted with options like rain shower heads, hand-held, spa-like or
+        multi-functional shower heads
+      </p>
+    </div>
+
+    <div class="col-sm-8">
+      <h4>Grab Bars</h4>
+      <p>
+        It’s time to feel safe in the shower again, reduce the risk of falling by including multiple grab bars in your
+        custom design
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <img
+        class="img-fluid rounded"
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/Grab%20Bars.jpeg"
+      />
+    </div>
+
+    <div class="col-sm-3">
+      <img
+        class="img-fluid rounded"
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/BCI%20Shower%20Seat.jpeg"
+      />
+    </div>
+    <div class="col-sm-9">
+      <h4>Safety Seats</h4>
+      <p>Bathe comfortably with a built-in or foldable shower seat that can minimize the chance of a slip or fall</p>
+    </div>
+
+    <div class="col-sm-8">
+      <h4>Storage Shelves</h4>
+      <p>
+        Increase the storage space in your shower and conveniently store your toiletries with our corner shelves,
+        built-in niches and shower caddies
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <img
+        class="img-fluid rounded"
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/BCI%20Shower%20Shelf.jpeg"
+      />
+    </div>
+
+    <div class="col-sm-4">
+      <img
+        class="img-fluid rounded"
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/BCI%20Shaving%20Stand.jpg"
+      />
+    </div>
+    <div class="col-sm-8">
+      <h4>Shaving Stands</h4>
+      <p>
+        Built-in to your unit, our shaving stands perfectly blend with your shower to create a safer and more convenient
+        way to shave
+      </p>
+    </div>
+
+    <div class="col-sm-8">
+      <h4>Soap Dishes</h4>
+      <p>
+        Add a custom soap dish to store your favorite soap to create a custom yet handy addition to your shower space
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <img
+        class="img-fluid rounded"
+        src="https://favoredcompany.com/cdn-cgi/image/fit=scale-down,width=864,format=auto/https://get.yankeehomeimprovement.com/images/showers/accessories/BCI%20Soap%20Dish.png"
+      />
+    </div>
+  </div>
+
+  <div class="row" id="limited-time-offer">
+    <h3>Limited Time Offer</h3>
+    <h5>Get your project started with no money down!*</h5>
+    <h4>50% Off Installation Cost</h4>
+  </div>
+
+  <div class="row" id="heyflow">
+    <heyflow-wrapper flow-id="shower-wizard" dynamic-height style-config='{"width": "100%"}'></heyflow-wrapper>
+  </div>
+
+  <div class="row" id="about-us">
+    <h3>Experience The All-Weather<br />Seal Difference</h3>
+    <h5>173 Human Beings Dedicated To<br />Providing You A No Worries Shower Remodel</h5>
+
+    <div class="col-4">
+      <h4>Multi-Generational Family Business</h4>
+    </div>
+    <div class="col-8">
+      <img
+        class="img-fluid rounded"
+        src="https://cmsplatform.blob.core.windows.net/wwwallweathersealinccom/page-info-images/6a6dc0cb-4eb2-41ad-b82b-72058aa14fda.jpg"
+      />
+      <p>Pictured here is All-Weather Seal Recruiter Jakob Parsons, with the Father Fred Foundation.</p>
+    </div>
+
+    <div class="col-8">
+      <div class="embed-container">
+        <iframe src="https://www.youtube.com/embed/6RqmO7a44Dk" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p>Serving North & West Michigan For Over 43+ Years!</p>
+    </div>
+    <div class="col-4">
+      <h4>Lifetime Warranty Backed By A Dedicated Service Department. You'll Never Have To Call A Manufacturer!</h4>
+    </div>
+  </div>
+
+  <div class="row" id="limited-time-offer">
+    <h3>Currently Planning For <span style="text-decoration: underline">884 Shower Installs</span> in 2024</h3>
+    <h4 style="font-size: 3vw">Get your price now before our schedule is full!</h4>
+  </div>
+
+  <div class="row" id="heyflow">
+    <heyflow-wrapper flow-id="shower-wizard" dynamic-height style-config='{"width": "100%"}'></heyflow-wrapper>
+  </div>
+
+  <div class="row" id="disclaimer">
+    <p>
+      *Most standard projects completed in one day, complex designs completed in an average of 2 days. Special offers
+      may not be combined with any other discounts. Special Offer valid at first visit only. Some restrictions apply.
+      Some products may not qualify for special offers. Maximum discount may not exceed 10% off retail price. Financing
+      is subject to third party approval. 50% off of installation is equal to 7.5% of the retail price. No money down
+      requires a fully financed project. All communication with Yankee Home may be recorded for quality and training
+      purposes.<br />
+      MI # 2102181856
+    </p>
+  </div>
+
+  <div class="row" id="footer">
+    <div class="col-sm-4">
+      <img src="./static/img/logo.png" />
+    </div>
+    <div class="col-sm-4">
+      <h4>Lowell Headquarters</h4>
+      <h5>(866) 576-9177</h5>
+      <h5>319 E Main St.<br />Lowell, MI 49331</h5>
+
+      <h4>Traverse City Area</h4>
+      <h5>(231) 432-5513</h5>
+      <h5>4306 S M-37<br />Grawn, MI 49637</h5>
+    </div>
+    <div class="col-sm-4">
+      <h4>Ludington</h4>
+      <h5>(231) 936-2471</h5>
+      <h5>3900 US-10<br />Ludington, MI 49431</h5>
+
+      <h4>Petoskey</h4>
+      <h5>(231) 535-9421</h5>
+      <h5>2210 E. Mitchell Rd.<br />Petoskey, MI 49770</h5>
+    </div>
+
+    <hr />
+
+    <ul>
+      <li><a href="/terms">Terms</a></li>
+      <li>Privacy</li>
+      <li>Contact</li>
+      <li>All-Weather Seal Of West Michigan © 2024. All Rights Reserved.</li>
+    </ul>
+  </div>
+</div>
 {% endblock %}
