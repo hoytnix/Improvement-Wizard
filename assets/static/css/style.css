@@ -245,13 +245,27 @@ body {
 
 #satisfaction-guaranteed {
 	margin: 40px 5px;
+	padding: 40px 0;
 	border-style: dashed;
 	border-color: black;
 	border-width: 2px;
 }
 
-#satisfaction-guaranteed h3 {
+#satisfaction-guaranteed span {
 	font-size: 7vw;
+}
+
+#satisfaction-guaranteed h3 {
+	font-size: 5vw;
+	margin-bottom: 40px;	
+}
+
+#satisfaction-guaranteed h4 {
+	font-size: 4vw;
+}
+
+#satisfaction-guaranteed p {
+	font-size: 3vw;
 }
 
 #service-map {
@@ -354,7 +368,7 @@ body {
 }
 
 #limited-time-offer h5 {
-	font-size: 4vw;
+	font-size: 3vw;
 }
 
 #benefits h3 {
@@ -507,19 +521,27 @@ body {
 	font-size: 3vw;
 }
 
-#options .col-sm-4 {
+#options .col-4 {
 	margin-top: 40px;
 }
 
-#options .col-sm-8 {
+#options .col-8 {
 	margin-top: 40px;
 }
 
-#options .col-sm-3 {
+#options .col-3 {
 	margin-top: 40px;
 }
 
-#options .col-sm-9 {
+#options .col-7 {
+	margin-top: 40px;
+}
+
+#options .col-5 {
+	margin-top: 40px;
+}
+
+#options .col-9 {
 	margin-top: 40px;
 }
 
