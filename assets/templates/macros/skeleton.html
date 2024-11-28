@@ -15,12 +15,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://assets.prd.heyflow.com/builder/widget/latest/webview.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,7 +24,7 @@
 
     <!-- Custom Scipts -->
     <link href="./static/css/style.css?v={{ range(1000000,9999999) | random }}" rel="stylesheet" />
-    <script src="./static/js/app.js?v={{ range(1000000,9999999) | random }}"></script>
+    <script async src="./static/js/app.js?v={{ range(1000000,9999999) | random }}"></script>
 
     <!-- Open Graph -->
     {% if title %}
@@ -89,7 +83,7 @@
     <script type="text/javascript">
       function GetJS() {
         var element = document.createElement("script");
-        element.src = "./static/js/app.js";
+        element.src = "https://assets.prd.heyflow.com/builder/widget/latest/webview.js";
         document.body.appendChild(element);
 
         window.dataLayer = window.dataLayer || [];
@@ -104,7 +98,7 @@
     <title>{% if title %}{{ title }} - {% endif %}{{ proj_title }}</title>
     {% block insert_header %}{% endblock %}
   </head>
-  <body onload="GetJS()">
+  <body onload="window.onDomReady(GetJS())">
     {% block body %}{% endblock %}
   </body>
 </html>
