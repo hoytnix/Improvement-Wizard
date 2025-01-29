@@ -1,126 +1,4 @@
 /***************************************
- _______  _______  _______  _______  ___   __    _  _______ 
-|       ||       ||       ||       ||   | |  |  | ||       |
-|    _  ||   _   ||    _  ||    _  ||   | |   |_| ||  _____|
-|   |_| ||  | |  ||   |_| ||   |_| ||   | |       || |_____ 
-|    ___||  |_|  ||    ___||    ___||   | |  _    ||_____  |
-|   |    |       ||   |    |   |    |   | | | |   | _____| |
-|___|    |_______||___|    |___|    |___| |_|  |__||_______|
-
-****************************************/
-
-
-.poppins-thin {
-	font-family: "Poppins", sans-serif;
-	font-weight: 100;
-	font-style: normal;
-}
-
-.poppins-extralight {
-	font-family: "Poppins", sans-serif;
-	font-weight: 200;
-	font-style: normal;
-}
-
-.poppins-light {
-	font-family: "Poppins", sans-serif;
-	font-weight: 300;
-	font-style: normal;
-}
-
-.poppins-regular {
-	font-family: "Poppins", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
-.poppins-medium {
-	font-family: "Poppins", sans-serif;
-	font-weight: 500;
-	font-style: normal;
-}
-
-.poppins-semibold {
-	font-family: "Poppins", sans-serif;
-	font-weight: 600;
-	font-style: normal;
-}
-
-.poppins-bold {
-	font-family: "Poppins", sans-serif;
-	font-weight: 700;
-	font-style: normal;
-}
-
-.poppins-extrabold {
-	font-family: "Poppins", sans-serif;
-	font-weight: 800;
-	font-style: normal;
-}
-
-.poppins-black {
-	font-family: "Poppins", sans-serif;
-	font-weight: 900;
-	font-style: normal;
-}
-
-.poppins-thin-italic {
-	font-family: "Poppins", sans-serif;
-	font-weight: 100;
-	font-style: italic;
-}
-
-.poppins-extralight-italic {
-	font-family: "Poppins", sans-serif;
-	font-weight: 200;
-	font-style: italic;
-}
-
-.poppins-light-italic {
-	font-family: "Poppins", sans-serif;
-	font-weight: 300;
-	font-style: italic;
-}
-
-.poppins-regular-italic {
-	font-family: "Poppins", sans-serif;
-	font-weight: 400;
-	font-style: italic;
-}
-
-.poppins-medium-italic {
-	font-family: "Poppins", sans-serif;
-	font-weight: 500;
-	font-style: italic;
-}
-
-.poppins-semibold-italic {
-	font-family: "Poppins", sans-serif;
-	font-weight: 600;
-	font-style: italic;
-}
-
-.poppins-bold-italic {
-	font-family: "Poppins", sans-serif;
-	font-weight: 700;
-	font-style: italic;
-}
-
-.poppins-extrabold-italic {
-	font-family: "Poppins", sans-serif;
-	font-weight: 800;
-	font-style: italic;
-}
-
-.poppins-black-italic {
-	font-family: "Poppins", sans-serif;
-	font-weight: 900;
-	font-style: italic;
-}
-
-
-
-/***************************************
  __   __  _______  __   __  _______  ___      _______  _     _ 
 |  | |  ||       ||  | |  ||       ||   |    |       || | _ | |
 |  |_|  ||    ___||  |_|  ||    ___||   |    |   _   || || || |
@@ -133,6 +11,19 @@
 
 #heyflow {
 	margin: 20px 0;
+}
+
+#coupon {
+	margin: 40px 5px;
+	padding: 40px 0;
+	border-style: dashed;
+	border-color: black;
+	border-width: 2px;
+	display: none;
+}
+
+#exitIntentPopup {
+	text-align: center;
 }
 
 
@@ -186,7 +77,32 @@ __   __  _______  __   __  _______  __   __  _______  _______
 
 
 body {
-	font-family: "Poppins";
+	font-family: "OpenSans";
+}
+
+h1 {
+	font-family: "EB Geramond";
+	font-weight: bold;
+}
+
+h2 {
+	font-family: "EB Geramond";
+	font-weight: bold;
+}
+
+h3 {
+	font-family: "EB Geramond";
+	font-weight: bold;
+}
+
+h4 {
+	font-family: "EB Geramond";
+	font-weight: bold;
+}
+
+h5 {
+	font-family: "EB Geramond";
+	font-weight: bold;
 }
 
 #announcement {
@@ -204,10 +120,11 @@ body {
 	color: white;
 	font-size: 5vw;
 	font-weight: bold;
+	padding: 12px;
 }
 
-#banner-subtext {
-	font-size: 4vw;
+#banner-subtext h2 {
+	font-size: 3vw;
 }
 
 #ixl8s {
@@ -233,6 +150,7 @@ body {
 	text-align: right;
 	color: #00407A;
 	font-size: 5vw;
+	font-family: "EB Geramond";
 }
 
 .customer-sign {
@@ -251,6 +169,15 @@ body {
 	border-width: 2px;
 }
 
+#ixl9s {
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #D4AF37;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 5px;
+	font-size: 5vw !important;
+}
+
 #satisfaction-guaranteed span {
 	font-size: 7vw;
 }
@@ -258,6 +185,7 @@ body {
 #satisfaction-guaranteed h3 {
 	font-size: 5vw;
 	margin-bottom: 40px;	
+	color: #016CAF;
 }
 
 #satisfaction-guaranteed h4 {
@@ -424,11 +352,15 @@ body {
 }
 
 #colors p {
+	font-family: "EB Geramond";
 	font-size: 3.5vw;
+	font-weight: bold;
 }
 
 .colors-style {
+	font-family: "OpenSans";
 	font-size: 80%;
+	font-weight: normal;
 }
 
 #reviews {
@@ -547,12 +479,13 @@ body {
 
 #about-us h3 {
 	padding-top: 40px;
+	padding-bottom: 40px;
 	font-size: 7vw;
 }
 
 #about-us h4 {
 	color: #016CAF;
-	font-size: 4vw;
+	font-size: 3vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -560,11 +493,24 @@ body {
 }
 
 #about-us h5 {
-	font-size: 4vw;
+	font-size: 2.5vw;
+	padding-bottom: 20px;
 }
 
 #about-us img {
 	max-height: 350px;
+}
+
+#about-us p {
+	font-size: 2vw;
+}
+
+#about-us span {
+	font-size: 4vw;
+}
+
+#about-us .row {
+	margin-top: 80px;
 }
 
 #disclaimer p {
